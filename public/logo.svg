@@ -1,0 +1,28 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="tg" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#6ee7b7"/>
+      <stop offset="1" stop-color="#34d399"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Triquetra mark -->
+  <g transform="translate(64,20)">
+    <rect x="0.5" y="0.5" width="71" height="71" rx="16" fill="#0f1214"/>
+    <rect x="0.5" y="0.5" width="71" height="71" rx="16" stroke="url(#tg)" stroke-width="1.5"/>
+
+    <path d="M59.19,60.09 A18,18 0 1 1 59.19,28.91" stroke="url(#tg)" stroke-width="6.5" fill="none" stroke-linecap="round"/>
+    <path d="M-4.19,44.50 A18,18 0 1 1 22.81,60.09" stroke="url(#tg)" stroke-width="6.5" fill="none" stroke-linecap="round"/>
+    <path d="M41.00,-2.59 A18,18 0 1 1 14.00,13.00" stroke="url(#tg)" stroke-width="6.5" fill="none" stroke-linecap="round"/>
+
+    <circle cx="32" cy="32" r="4" fill="#6ee7b7"/>
+  </g>
+
+  <!-- Subtitle -->
+  <text x="100" y="112" text-anchor="middle"
+        font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
+        font-size="21" font-weight="600" fill="#e5e7eb" letter-spacing="1.5">tejaverse</text>
+  <text x="100" y="132" text-anchor="middle"
+        font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
+        font-size="10.5" fill="#6ee7b7" letter-spacing="4">DEVELOPER</text>
+</svg>

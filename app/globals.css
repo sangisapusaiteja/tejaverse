@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Light (default) */
+  --bg: 250 250 252;
+  --surface: 255 255 255;
+  --edge: 226 226 231;
+  --muted: 113 113 122;
+  --strong: 24 24 27;
+  --soft: 63 63 70;
+  --chip: 244 244 245;
+  --accent: 16 122 87;
+  --accent-dim: 5 150 105;
+  --overlay: 24 24 27;
+}
+
+html.dark {
+  --bg: 13 13 16;
+  --surface: 20 20 23;
+  --edge: 38 38 43;
+  --muted: 161 161 170;
+  --strong: 229 229 234;
+  --soft: 196 196 204;
+  --chip: 24 24 27;
+  --accent: 110 231 183;
+  --accent-dim: 52 211 153;
+  --overlay: 255 255 255;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-base text-[rgb(var(--strong))] antialiased;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+::selection {
+  @apply bg-[rgb(var(--accent))] text-[rgb(var(--bg))];
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-6xl px-6;
+  }
+  .card {
+    @apply rounded-xl border border-edge bg-surface;
+  }
+  .label {
+    @apply font-mono text-[11px] uppercase tracking-[0.2em] text-muted;
+  }
+  .btn-primary {
+    @apply inline-flex items-center gap-2 rounded-lg bg-[rgb(var(--strong))] px-4 py-2 text-sm font-medium text-[rgb(var(--bg))] transition hover:opacity-85;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center gap-2 rounded-lg border border-edge px-4 py-2 text-sm font-medium text-[rgb(var(--soft))] transition hover:border-[rgb(var(--muted))] hover:text-accent-strong;
+  }
+}
