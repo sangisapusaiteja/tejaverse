@@ -9,7 +9,7 @@ export default function Home() {
   const posts = getAllPosts();
   return (
     <>
-      <Hero />
+      <Hero postCount={posts.length} />
       <Projects />
       <Blog posts={posts} />
       <About />

@@ -1,6 +1,6 @@
 import { site } from "@/lib/site";
 
-export default function Hero() {
+export default function Hero({ postCount }: { postCount: number }) {
   return (
     <section
       id="top"
@@ -37,7 +37,7 @@ export default function Hero() {
           </div>
           <div>
             <p className="font-mono text-2xl font-semibold text-accent-strong">
-              06+
+              {postCount.toString().padStart(2, "0")}
             </p>
             <p className="mt-1 text-xs text-muted">Blog posts</p>
           </div>
